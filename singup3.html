@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>One Piece Tournaments</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      /* Form container */
+      .form-container {
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      /* Form header */
+      .form-header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-header h2 {
+        font-size: 24px;
+      }
+
+      /* Form fields */
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="contraseña"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      /* Form button */
+      .form-button {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .form-button button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .form-button button:hover {
+        background-color: #45a049;
+      }
+
+      /* Form message */
+      .form-message {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-header">
+        <h1>One Piece Tournaments</h1>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-user"></i>Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="contraseña"><i class="fas fa-lock"></i>Contraseña:</label>
+          <input
+            type="contraseña"
+            id="contraseña"
+            name="contraseña"
+            placeholder="contraseña"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirm-contraseña"
+            ><i class="fas fa-lock"></i> Confirmar contraseña:</label
+          >
+          <input
+            type="contraseña"
+            id="confirm-contraseña"
+            name="confirm-contraseña"
+            placeholder="Confirmar contraseña"
+            required
+          />
+        </div>
+        <div class="form-button">
+          <button type="submit">Registrar</button>
+        </div>
+      </form>
+      <div class="form-message">
+        <p>Already have an account? <a href="#">Log In</a></p>
+      </div>
+    </div>
+  </body>
+</html>
