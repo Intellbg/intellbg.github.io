@@ -1,24 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>One Piece Tournaments</title>
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+    type="text/css"
+      rel="stylesheet"
+      href="./css/styles.css"
+    >
   </head>
   <body>
-    <h1>One Piece Tournaments</h1>
-    <div class="">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" />
-      <label for="password">Contraseña</label>
-      <input type="password" id="pw1" />
-      <label for="password2">Confirmar contraseña</label>
-      <input type="password" id="pw2" />
-      <button type="submit" id="boton_registrar">Registrar</button>
+    <div class="form-container">
+      <div class="form-header">
+        <h1>One Piece Tournaments</h1>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-user"></i>Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="contraseña"><i class="fas fa-lock"></i>Contraseña:</label>
+          <input
+            type="password"
+            id="pw1"
+            name="contraseña"
+            placeholder="contraseña"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirm-contraseña"
+            ><i class="fas fa-lock"></i> Confirmar contraseña:</label
+          >
+          <input
+            type="password"
+            id="pw2"
+            name="confirm-contraseña"
+            placeholder="Confirmar contraseña"
+            required
+          />
+        </div>
+        <div class="form-button">
+          <button type="submit" id="boton_registrar">Registrar</button>
+        </div>
+      </form>
+      <div class="form-message">
+        <p>Ya tienes cuenta <a href="#">Log In</a></p>
+      </div>
     </div>
-
     <script type="module" src="./js/script.js"></script>
   </body>
 </html>

@@ -42,6 +42,7 @@ document
     createUserWithEmailAndPassword(auth, mail, pw1)
       .then((userCredential) => {
         const user = userCredential.user;
+          alert("User registrado")
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -51,5 +52,4 @@ document
       document.getElementById("email").value=''
       document.getElementById("pw1").value=''
       document.getElementById("pw2").value=''
-      alert("User registrado")
   });
