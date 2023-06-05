@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>One Piece Tournaments</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mx-auto">
+    <div class="max-w-md mx-auto bg-white p-8 border border-gray-300 shadow-md rounded-md">
+      <h1 class="text-center text-2xl font-bold mb-4">Login Form</h1>
+      <form>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">Email address</label>
+          <input type="email" class="form-input mt-1 block w-full" id="email" placeholder="Enter email">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700">Password</label>
+          <input type="password" class="form-input mt-1 block w-full" id="password" placeholder="Password">
+        </div>
+        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"></script>
+</body>
+</html>
